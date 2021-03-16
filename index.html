@@ -6,13 +6,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
+    <script src="styles.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="dark">
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark navbar-expand-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/Logo.svg" alt="" width="40" height="40">
+                CRAPPO
+            </a>
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#Navbar">
+                <span class="my-1 mx-2 close">X</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item mx-0 mx-md-3"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item mx-0 mx-md-3"><a class="nav-link" href="#Calculator">Calculator</a></li>
+                    <li class="nav-item mx-0 mx-md-3"><a class="nav-link" href="#Contact">Contact</a></li>
+                    <li class="nav-item mx-0 mx-md-3"><a class="nav-link active" >Login</a></li>
+                    <li class="nav-item mx-0 ml-md-3"><a class="btn btn-primary register" role="button">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container proposal">
+        <div class="row gx-0">
+            <div class="col-12 col-lg-6 platform">
+                <div class="d-inline-flex flex-row bd-highlight mb-2 sale proposal-row">
+                    <div>75% SAVE</div>
+                    <div>For the Black Friday weekend</div>
+                </div>
+                <h1 class="proposal-row">
+                    Fastest & secure<br>platform to invest<br>in crypto
+                </h1>
+                <p class="proposal-row">
+                    Buy and sell cryptocurrencies, trusted by 10M wallets<br>with over $30 billion in transactions.
+                </p>
+                <a class="btn btn-primary try proposal-row" role="button">
+                    Try for FREE
+                    <img src="images/Arrow%20Right.svg" alt="">
+                </a>
+            </div>
+            <div class="d-none d-lg-block col-lg-6">
+                <img src="images/Illustration.svg" class="img-fluid" alt="">
+            </div>
+        </div>
+        <div class="d-flex align-items-center flex-column calculator-header">
+            <div class="row p-2">
+                <div class="col-12 text-center" id="Calculator">
+                    <h2>Check how much you can earn</h2>
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="col-12 text-center">
+                    <p>Let’s check your hash rate to see how much you will earn today,<br>
+                        Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+            <div class="row mt-auto calculator-row cal-part1 ">
+                <div class="col d-flex flex-wrap align-items-center">
+                    <div class="p-2 mx-3 flex-grow-1">
+                        <input type="number" class="form-control" id="inputValue1"
+                               placeholder="Enter your dollar amount">
+                    </div>
+                    <div class="p-2 mx-3">
+                        <select class="form-control" id="calculatorSelector">
+                            <option value="1780" selected>Ethereum</option>
+                            <option value="55000">Bitcoin</option>
+                            <option value="0.47">Ripple</option>
+                            <option value="1.03">Cardano</option>
+                        </select>
+                    </div>
+                    <div class="p-2 mx-3 bd-highlight">
+                        <a class="btn btn-primary calculate" href="#" role="button">
+                            Calculate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    </div>
+    <img class="bg-image1 d-none d-lg-inline" src="images/[]1.svg" alt="" />
+    <img class="bg-image2 d-none d-lg-inline" src="images/[]2.svg" alt="" />
+</div>
+<div class="light">
+    <div class="container justify-content-center">
+            <div class="row mx-auto calculator-row cal-part2">
+                <div class="col-12 d-flex align-items-start flex-column bd-highlight mb-3">
+                    <div class="p-2 mx-3">
+                        <p class="custom-blue medium-weight no-margin-bottom">YOUR SUM:</p>
+                    </div>
+                    <div class="p-2 mx-3">
+                        <p class="resultValue bold-weight big-sized no-margin-bottom" style="color:black">0.055 130 59
+                            <span class="coinNameValueShorten">ETH</span> <span
+                                    class="priceValue custom-blue">($1275)</span></p>
+                    </div>
+                    <div class="p-2 mx-3 shrink-margin-top">
+                        <p class="custom-grey">Revenue will change based on mining difficulty and <span
+                                class="coinNameValue">Ethereum</span> price.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<footer class="dark-gradient d-flex align-items-center" id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex flex-wrap footer-container">
+                <div class="p-2 mx-3 flex-grow-2">
+                    <h3>
+                        Start mining now
+                    </h3>
+                    <p class="no-margin-bottom">
+                        Join now with CRAPPO to get the latest news and start mining now
+                    </p>
+                </div>
+                <div class="p-2 mx-3 flex-grow-1">
+                    <input type="email" class="form-control create-margin-bottom" id="inputEmail"
+                           placeholder="Enter your email" required>
+                    <select class="form-control">
+                        <option selected>Ethereum</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="p-2 mx-3 align-self-center">
+                    <a class="btn btn-primary subscribe medium-weight" href="#" role="button">
+                        Subscribe
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <img class="bg-image3 d-none d-lg-inline" src="images/Vector3.svg" alt="" />
+        <img class="bg-image4 d-none d-lg-inline" src="images/Vector4.svg" alt="" />
+    </div>
+
+</footer>
 </body>
 </html>
